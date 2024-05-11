@@ -118,8 +118,8 @@ footer{
     text-align: center;
 }
 .contenedor {  
-    width: 90vw;
-    height: 1300px;
+    width: 100vw;
+    height: 100vh;
     margin: 0 auto;
     text-align: center;
     display: grid;
@@ -192,30 +192,28 @@ footer{
     align-items: flex-end;
     margin-bottom: 0px;
 }
-.formulario{
-    background-color: transparent;
-    line-height: 2rem;
-    margin-top: 80px;
-}
-.cuerpo h2{
-    margin-top: 20px;
-    margin-bottom: 10px;
-}
 @media screen and (max-width:768px){
     .contenedor {  
-        grid-template-columns: 1fr;
-        grid-template-rows: 0.5fr 1fr 1fr 1fr 1fr 0.3fr 0.7fr 0.5fr;
-        gap: 2px;
-        grid-template-areas:
-          "header"
-          "main" 
-          "foto1"
-          "encabezado" 
-          "foto2"
-          "texto2"
-          "foto2"
-          "footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.08fr 0.1fr 0.1fr 0.5fr 0.5fr 0.2fr;
+    gap: 5px 5px;
+    grid-template-areas:
+      "header"
+      "main"
+      "foto1"
+      "encabezado foto2"
+      "texto2"
+      "footer";
       }
+    }
+    .formulario{
+        background-color: transparent;
+        line-height: 2rem;
+        margin-top: 80px;
+    }
+    .cuerpo h2{
+        margin-top: 20px;
+        margin-bottom: 10px;
     }
     .serviciosCard1{
         display: flex;
