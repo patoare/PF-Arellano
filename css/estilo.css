@@ -5,12 +5,14 @@
 }
 body{
     background: rgb(5,5,5);
-background: linear-gradient(0deg, rgba(5,5,5,1) 0%, rgba(243,246,241,0.7540266106442577) 18%) no-repeat;
+    background: linear-gradient(0deg, rgba(5,5,5,1) 0%, rgba(243,246,241,0.7540266106442577) 18%) no-repeat;
 }
 .nav{
     width: 100%;
-    height: 120px;
-    background-color:transparent;
+    height: 160px;
+    background-image:url(../multimedia/fondo-nav.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     border-radius: 10px;
     display: flex;
     justify-content: space-between;
@@ -32,12 +34,14 @@ margin-left: 130px;
     margin: 50px;
     margin-left: 10px;
     text-decoration: none;
-    color: black;
+    color: white;
 }
-.menu li  :hover{
-    background-color: black;
-    color: lime;
-    border-radius: 10px;
+.menu li :hover{
+    background-color: white;
+    color: black;
+    border-bottom: 2px;
+    font-size: large;
+    font-weight: bold;
 }
 .redes{
     margin-right: 160px;
@@ -61,17 +65,28 @@ margin-left: 130px;
     flex-direction:column;
     border-style: solid 5px;
     border-color: gray;
+    margin-top: 50px;
+    margin-bottom: 10px;
 }
 .cuerpo{
     width: 99%;
-    height:1400px ;
     margin-top: 3px;
+    margin-bottom: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 .marcasLogo{
     display: flex;
+}
+.plano{
+    text-align:center;
+    margin-bottom: 240px;
+}
+.plano p{
+    margin-left: 60px;
+    margin-right:60px;
+    font-weight: bold;
 }
 .cuerpo img {
     width: 100px;
@@ -97,115 +112,83 @@ footer{
 }
 .linkFormulario{
     align-self:center;
-    list-style: none;
+    list-style:none;
 }
 .linkFormulario a{
     color: white;
     text-decoration: none;
 }
-.parrafoPag2{
-    height: 600px;
-    text-align: center;
+.formularioDeContacto{
     margin-top: 100px;
-
+    width: 600px;
+    border: rgba(86, 186, 86, 0.76) solid 2px;
+    padding: 80px;
+    margin-bottom:100px;
+}
+.parrafoPag2{
+    height: 800px;
+    background-image:url(../multimedia/domótica-casa-inteligente.jpg);
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    margin-bottom: 80px;
 }
 .parrafoPag2 p{
-    width: 50%;
-    margin-left: 400px;
-    margin-top: 50px;
-    border-style: solid;
-    border-color:black;
-    text-align: center;
+    font-weight: bold;
+    font-size: large;
+    width: 80%;
+    margin-left: 140px;
+    margin-right: 60px;
+    margin-top: 20px;
+    background-color: rgba(0, 0, 0, 0.692);
+    color: white;
+    line-height: 1.7;
 }
-.contenedor {  
-    width: 100vw;
-    height: 100vh;
-    margin: 0 auto;
-    text-align: center;
+.container { 
     display: grid;
-    grid-template-columns: 0.8fr 0.8fr;
-    grid-template-rows: 0.08fr 0.1fr 0.1fr 0.5fr 0.2fr;
-    grid-auto-columns: 1fr;
-    gap: 5px 5px;
+    grid-template-columns: 5fr 4.5fr 0.4fr;
+    grid-template-rows: 0.5fr 2.3fr 1.7fr 1fr;
+    gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
-      "header header"
-      "main foto1"
-      "encabezado foto2"
-      "texto2 foto2"
-      "footer footer";
+      "nav nav ."
+      "fotoProyecto tablaProyecto ."
+      "yotube1 youtube2 ."
+      "footerProyecto footerProyecto .";
   }
-.header{
-    grid-area: header; 
-    background-color: transparent;
-}
-.main{
-    grid-area: main; 
-    display: flex;
-    flex-direction: column;
-    background-color: transparent;
-    margin-top: 15px;
-    line-height: 1.5;
-    padding-left: 90px;
-}
-.main h1{
-    color: green;
-    margin-bottom: 50px;
-}
-.main p{
+  
+  .nav { grid-area: nav; }
+  
+  .fotoProyecto { 
+    grid-area: fotoProyecto;
+    margin-top: 20px;
+ }
+  
+  
+  .tablaProyecto { 
+    grid-area: tablaProyecto;
+    margin-top: 80px;
+    margin-left: 20px;
+    text-align: center;
     font-weight: bold;
-}
-.foto1{
-    background-color: transparent;
-    padding-right: 150px;
-    line-height: 3;
-    margin-top: 40px;
-    grid-area: foto1;
-}
-.foto1 ul{
-    list-style: none;
-}
-.encabezado{
-    grid-area: encabezado; 
-    background-color: transparent;
-    margin-top: 40px;
+ }
+  
+  .yotube1 { 
+    grid-area: yotube1;
+    margin-top: 20px;
     text-align: center;
-}
-.encabezado H1{
+ }
+  
+  .youtube2 { 
+    grid-area: youtube2;
+    margin-top: 20px;
     text-align: center;
-}
-.texto2{
-    grid-area: texto2; 
-    background-color: rgba(85, 135, 85, 0.66);
-    height: 210px;
-    padding: 20px;
-    margin-top: 250px;
-}
-.foto2{
-    grid-area: foto2; 
-    background-color: transparent;
-    padding: 30px; 
-}
-footer{
-    grid-area: footer; 
-    display: flex;
-    align-items: flex-end;
-    margin-bottom: 0px;
-}
-@media screen and (max-width:768px){
-    .contenedor {  
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.08fr 0.1fr 0.1fr 0.5fr 0.5fr 0.2fr;
-    gap: 5px 5px;
-    grid-template-areas:
-      "header"
-      "main"
-      "foto1"
-      "encabezado foto2"
-      "texto2"
-      "footer";
-      }
-    }
+ }
+  
+  .footerProyecto { 
+    grid-area: footerProyecto;
+
+ }
     .formulario{
         background-color: transparent;
         line-height: 2rem;
@@ -218,7 +201,7 @@ footer{
     .serviciosCard1{
         display: flex;
         text-align: center;
-        margin-top: 10px;
+        margin-top: 50px;
         padding: 25px;
     }
     .serviciosCard1 img{
@@ -239,6 +222,7 @@ footer{
         flex-wrap: wrap;
         text-align: center; 
         padding: 25px;
+        margin-bottom:100px;
     }
     .serviciosCard2 img{
         margin-left: 50px;
@@ -246,9 +230,19 @@ footer{
         height: 120px;
         width: 200px;
     }
-    .formularioDeContacto{
-        margin-top: 100px;
-        width: 600px;
-        border: rgba(86, 186, 86, 0.76) solid 2px;
-        padding: 20px;
+    
+  @media screen and (min-width:768px){
+    .contenedor {  
+    display: grid;
+    grid-template-columns: 5fr 4.5fr;
+    grid-template-rows: 0.5fr 2.3fr 2.3fr 1.7fr 1fr;
+    gap: 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "nav nav"
+      "fotoProyecto" 
+      "tablaProyecto"
+      "yotube1 youtube2"
+      "footerProyecto footerProyecto"
+      }
     }
