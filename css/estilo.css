@@ -145,49 +145,47 @@ footer{
     line-height: 1.7;
 }
 .container { 
+    width: 100vw;
+    height: 100vw;
     display: grid;
-    grid-template-columns: 5fr 4.5fr 0.4fr;
+    grid-template-columns: 2fr 2fr;
     grid-template-rows: 0.5fr 2.3fr 1.7fr 1fr;
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
-      "nav nav ."
-      "fotoProyecto tablaProyecto ."
+      "nav nav nav"
+      "fotoProyecto tablaProyecto . "
       "yotube1 youtube2 ."
       "footerProyecto footerProyecto .";
   }
   
-  .nav { grid-area: nav; }
-  
+  .nav { 
+    grid-area: nav;
+ }
+
   .fotoProyecto { 
     grid-area: fotoProyecto;
     margin-top: 20px;
  }
-  
-  
   .tablaProyecto { 
     grid-area: tablaProyecto;
     margin-top: 80px;
     margin-left: 20px;
     text-align: center;
     font-weight: bold;
- }
-  
+ } 
   .yotube1 { 
     grid-area: yotube1;
     margin-top: 20px;
     text-align: center;
- }
-  
+ } 
   .youtube2 { 
     grid-area: youtube2;
     margin-top: 20px;
     text-align: center;
  }
-  
   .footerProyecto { 
     grid-area: footerProyecto;
-
  }
     .formulario{
         background-color: transparent;
@@ -230,18 +228,12 @@ footer{
         height: 120px;
         width: 200px;
     }
-    
-  @media screen and (min-width:768px){
+  @media screen and (max-width:768px){
     .contenedor {  
-    display: grid;
-    grid-template-columns: 5fr 4.5fr;
-    grid-template-rows: 0.5fr 2.3fr 2.3fr 1.7fr 1fr;
-    gap: 0px;
-    grid-auto-flow: row;
     grid-template-areas:
       "nav nav"
-      "fotoProyecto" 
-      "tablaProyecto"
+      "fotoProyecto fotoProyecto" 
+      "tablaProyecto tablaProyecto"
       "yotube1 youtube2"
       "footerProyecto footerProyecto"
       }
