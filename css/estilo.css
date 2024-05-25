@@ -1,359 +1,326 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-body{
-    background: rgb(5,5,5);
-    background: linear-gradient(0deg, rgba(5,5,5,1) 0%, rgba(243,246,241,0.7540266106442577) 18%) no-repeat;
+
+body {
+  background: rgb(5, 5, 5);
+  background: linear-gradient(0deg, rgb(5, 5, 5) 0%, rgba(243, 246, 241, 0.7540266106) 18%) no-repeat;
 }
 
 /* Estilo de barra navegacion */
+.nav {
+  width: 100%;
+  height: 160px;
+  background-image: url(../multimedia/fondo-nav.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
-.nav{
-    width: 100%;
-    height: 160px;
-    background-image:url(../multimedia/fondo-nav.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.logoEmpresa img {
+  width: 200px;
+  height: 90px;
+  margin-left: 130px;
 }
-.logoEmpresa img{
-width: 200px;
-height: 90px;
-margin-left: 130px;
+
+.menu {
+  align-self: flex-end;
 }
-.menu{
-    align-self:flex-end ;
+.menu ul {
+  display: inline-flex;
+  list-style: none;
 }
-.menu ul{
-    display: inline-flex;
-    list-style: none;
+.menu li a {
+  margin: 50px;
+  margin-left: 10px;
+  text-decoration: none;
+  color: white;
 }
-.menu li a{
-    margin: 50px;
-    margin-left: 10px;
-    text-decoration: none;
-    color: white;
+.menu li :hover {
+  background-color: white;
+  color: black;
+  border-bottom: 2px;
+  font-size: large;
+  font-weight: bold;
 }
-.menu li :hover{
-    background-color: white;
-    color: black;
-    border-bottom: 2px;
-    font-size: large;
-    font-weight: bold;
+
+.redes {
+  margin-right: 160px;
 }
-.redes{
-    margin-right: 160px;
+.redes a {
+  display: flex;
+  flex-wrap: nowrap;
 }
-.redes a{
-    display:flex;
-    flex-wrap: nowrap;
+.redes img {
+  width: 30px;
+  height: 30px;
 }
-.redes img{
-    width:30px;
-    height:30px;
+
+.fixed {
+  position: fixed;
+  display: inline-block;
 }
-.fixed{
-    position: fixed;
-    display: inline-block;
+
+.marcasLogo {
+  display: flex;
 }
-.marcasLogo{
-    display: flex;
-}
-.links{
-    align-self:center;
+
+.links {
+  align-self: center;
 }
 
 /* estilo Footer */
-
-footer{
-    width: 99%;
-    margin: 5px;
-    border-radius: 10px;
-    display: flex;
-    justify-content: space-around;
+footer {
+  width: 99%;
+  margin: 5px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-around;
 }
-.logoFooter img{
-    width:90px;
-    height:90px;
-    margin-top:5px;
-    margin-bottom:5px;
+
+.logoFooter img {
+  width: 90px;
+  height: 90px;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 /* Estilo index*/
+.responsiveActivo {
+  width: 100vw;
+  height: 100vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 0.5fr 2.3fr 1.7fr 3fr 1fr;
+  gap: 5px;
+  grid-auto-flow: row;
+  grid-template-areas: "header header header" "carousel carousel carousel" "cuerpo cuerpo cuerpo" "plano plano plano" "footerPagina1 footerPagina1 footerPagina1";
+}
 
-.responsiveActivo{
-    width:100vw;
-    height: 100vw;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 0.5fr 2.3fr 1.7fr 3fr 1fr;
-    gap: 5px;
-    grid-auto-flow: row;
-    grid-template-areas:
-    "header header header"
-    "carousel carousel carousel"
-    "cuerpo cuerpo cuerpo"
-    "plano plano plano"
-    "footerPagina1 footerPagina1 footerPagina1"
+.header {
+  grid-area: header;
 }
-.header{
-    grid-area:header;
+
+.navPagina1 {
+  grid-area: navPagina1;
+  width: 99%;
+  height: 160px;
+  background-image: url(../multimedia/fondo-nav.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.navPagina1{
-    grid-area: navPagina1;
-    width: 99%;
-    height: 160px;
-    background-image:url(../multimedia/fondo-nav.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+
+.footerPagina1 {
+  grid-area: footerPagina1;
+  width: 99%;
+  height: 160px;
+  margin: 5px;
+  display: flex;
+  justify-content: space-around;
 }
-.footerPagina1{
-    grid-area: footerPagina1;
-    width: 99%;
-    height: 160px;
-    margin: 5px;
-    display: flex;
-    justify-content: space-around;
+
+.carousel {
+  grid-area: carousel;
+  width: 100%;
+  height: 550px;
+  display: flex;
+  flex-direction: column;
+  border-style: solid 5px;
+  border-color: gray;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
-.carousel{
-    grid-area: carousel;
-    width:100%;
-    height: 550px;
-    display: flex;
-    flex-direction:column;
-    border-style: solid 5px;
-    border-color: gray;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-.cuerpo{
-    grid-area:cuerpo;
-    width: 99%;
-    margin-top: 3px;
-    margin-bottom: 50px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.plano{
-    grid-area:plano;
-    text-align:center;
-    margin-bottom: 60px;
-}
-.plano p{
-    margin-left: 60px;
-    margin-right:60px;
-    font-weight: bold;
+
+.cuerpo {
+  grid-area: cuerpo;
+  width: 99%;
+  margin-top: 3px;
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .cuerpo img {
-    width: 100px;
-    height: 50px;
-    background-color: transparent;
-    margin:60px;
+  width: 100px;
+  height: 50px;
+  background-color: transparent;
+  margin: 60px;
+}
+
+.plano {
+  grid-area: plano;
+  text-align: center;
+  margin-bottom: 60px;
+}
+.plano p {
+  margin-left: 60px;
+  margin-right: 60px;
+  font-weight: bold;
 }
 
 /* estilo pagina 2 */
+.parrafoPag2 {
+  height: 800px;
+  background-image: url(../multimedia/domótica-casa-inteligente.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  margin-bottom: 80px;
+}
+.parrafoPag2 p {
+  font-weight: bold;
+  font-size: large;
+  width: 80%;
+  margin-left: 140px;
+  margin-right: 60px;
+  margin-top: 20px;
+  background-color: rgba(0, 0, 0, 0.692);
+  color: white;
+  line-height: 1.7;
+}
 
-.parrafoPag2{
-    height: 800px;
-    background-image:url(../multimedia/domótica-casa-inteligente.jpg);
-    background-repeat:no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    margin-bottom: 80px;
+/* estilo pagina 3 */
+.serviciosCard1 {
+  display: flex;
+  text-align: center;
+  margin-top: 50px;
+  padding: 25px;
 }
-.parrafoPag2 p{
-    font-weight: bold;
-    font-size: large;
-    width: 80%;
-    margin-left: 140px;
-    margin-right: 60px;
-    margin-top: 20px;
-    background-color: rgba(0, 0, 0, 0.692);
-    color: white;
-    line-height: 1.7;
+.serviciosCard1 img {
+  margin-left: 50px;
+  margin-right: 50px;
+  height: 120px;
+  width: 200px;
 }
 
- /* estilo pagina 3 */
-   
- .serviciosCard1{
-    display: flex;
-    text-align: center;
-    margin-top: 50px;
-    padding: 25px;
+.serviciosCard2 {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  padding: 25px;
+  margin-bottom: 100px;
 }
-  .serviciosCard1 img{
-    margin-left: 50px;
-    margin-right: 50px;
-    height: 120px;
-    width: 200px;
+.serviciosCard2 img {
+  margin-left: 50px;
+  margin-right: 50px;
+  height: 120px;
+  width: 200px;
 }
-  .card h5:hover{
-    border-radius: 10px;
-    background-color:rgba(0, 0, 0, 0.41);
-    border-style:solid;
-    border-color:rgba(0, 0, 0, 0.41);
-    color: white;
-}
-  .serviciosCard2{
-    display: flex;
-    flex-wrap: wrap;
-    text-align: center; 
-    padding: 25px;
-    margin-bottom:100px;
-}
-  .serviciosCard2 img{
-    margin-left: 50px;
-    margin-right: 50px;
-    height: 120px;
-    width: 200px;
+
+.card h5:hover {
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.41);
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0.41);
+  color: white;
 }
 
 /* estilo pagina 4 */
+.container-grid {
+  width: 100vw;
+  height: 100vw;
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  grid-template-rows: 0.5fr 2.3fr 1.7fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "nav nav nav" "fotoProyecto tablaProyecto . " "yotube1 youtube2 ." "footerProyecto footerProyecto .";
+}
 
-.container-grid { 
-    width: 100vw;
-    height: 100vw;
-    display: grid;
-    grid-template-columns: 2fr 2fr;
-    grid-template-rows: 0.5fr 2.3fr 1.7fr 1fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas:
-      "nav nav nav"
-      "fotoProyecto tablaProyecto . "
-      "yotube1 youtube2 ."
-      "footerProyecto footerProyecto .";
-  }
-  .nav { 
-    grid-area: nav;
- }
-  .fotoProyecto { 
-    grid-area: fotoProyecto;
-    margin-top: 20px;
- }
-  .tablaProyecto { 
-    grid-area: tablaProyecto;
-    height: 200px;
-    margin-top: 200px;
-    margin-left: 20px;
-    margin-right: 40px;
-    border-style: solid;
-    border-color: black;
-    text-align: center;
-    font-weight: bold;
- } 
-  .yotube1 { 
-    grid-area: yotube1;
-    margin-top: 20px;
-    text-align: center;
- } 
-  .youtube2 { 
-    grid-area: youtube2;
-    margin-top: 20px;
-    text-align: center;
- }
-  .footerProyecto { 
-    grid-area: footerProyecto;
- } 
-  .formulario{
-     background-color: transparent;
-     line-height: 2rem;
-     margin-top: 80px;
- }
-   .cuerpo h2{
-     margin-top: 20px;
-     margin-bottom: 10px;
- }
+.nav {
+  grid-area: nav;
+}
+
+.fotoProyecto {
+  grid-area: fotoProyecto;
+  margin-top: 20px;
+}
+
+.tablaProyecto {
+  grid-area: tablaProyecto;
+  height: 200px;
+  margin-top: 200px;
+  margin-left: 20px;
+  margin-right: 40px;
+  border-style: solid;
+  border-color: black;
+  text-align: center;
+  font-weight: bold;
+}
+
+.yotube1 {
+  grid-area: yotube1;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.youtube2 {
+  grid-area: youtube2;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.footerProyecto {
+  grid-area: footerProyecto;
+}
+
+.formulario {
+  background-color: transparent;
+  line-height: 2rem;
+  margin-top: 80px;
+}
+
+.cuerpo h2 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
 
 /* estilo pagina 5*/
-
-.linkFormulario{
-    align-self:center;
-    list-style:none;
+.linkFormulario {
+  align-self: center;
+  list-style: none;
 }
-.linkFormulario a{
-    color: white;
-    text-decoration: none;
-}
-.formularioDeContacto{
-    margin-top: 100px;
-    width: 600px;
-    border: rgba(86, 186, 86, 0.76) solid 2px;
-    padding: 80px;
-    margin-bottom:100px;
+.linkFormulario a {
+  color: white;
+  text-decoration: none;
 }
 
- /* dependencias para MQ pagina 4 */
-  
- @media screen and (max-width:768px){
-     .container-grid {
-     grid-template-columns: 2fr;
-     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-     grid-template-areas:
-     "nav"
-     "fotoProyecto"
-     "tablaProyecto"
-     "yotube1"
-     "youtube2"
-     "footerProyecto ";
-     background: none;
-     background-color: rgb(49, 80, 49);
- }
- }
-   @media screen and (max-width:425px){
-     .container-grid {
-      grid-template-columns: 2fr;
-      grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-      grid-template-areas:
-      "nav"
-      "tablaProyecto"
-      "fotoProyecto"
-      "yotube1"
-      "youtube2"
-      "footerProyecto ";
-      background: none;
-      background-color:rgba(145, 219, 145, 0.289);
- }
- }
+.formularioDeContacto {
+  margin-top: 100px;
+  width: 600px;
+  border: rgba(86, 186, 86, 0.76) solid 2px;
+  padding: 80px;
+  margin-bottom: 100px;
+}
 
- /* dependencias para MQ pagina 1 */
-  
- @media screen and (max-width: 768px){
-     .responsiveActivo{
-     grid-template-columns: 1fr 1fr;
-     grid-template-rows: 0.5fr 2.3fr 1.7fr 3fr 1fr;
-     grid-template-areas:
-     "header header"
-     "carousel carousel"
-     "plano plano"
-     "cuerpo cuerpo"
-     "footerPagina1 footerPagina1";   
-     background: none;
-     background-color: rgba(72, 138, 72, 0.671);  
+/* dependencias para MQ pagina 4 */
+@media screen and (max-width: 768px) {
+  .responsiveActivo {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.5fr 2.3fr 1.7fr 3fr 1fr;
+    grid-template-areas: "header header" "carousel carousel" "plano plano" "cuerpo cuerpo" "footerPagina1 footerPagina1";
+    background: none;
+    background-color: rgba(72, 138, 72, 0.671);
+  }
 }
+@media screen and (max-width: 425px) {
+  .responsiveActivo {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 1fr 1fr 1.7fr 3fr 1fr;
+    grid-template-areas: "header" "plano" "cuerpo" "cuerpo" "carousel" "footerPagina1";
+    background: none;
+    background-color: rgba(101, 130, 59, 0.589);
+  }
 }
-   @media screen and (max-width:425px){
-     .responsiveActivo{
-     grid-template-columns: 1fr;
-     grid-template-rows: 0.5fr 1fr 1fr 1.7fr 3fr 1fr;
-     grid-template-areas:
-     "header"
-     "plano"
-     "cuerpo"
-     "cuerpo"
-     "carousel"
-     "footerPagina1";
-     background: none;
-     background-color:rgba(101, 130, 59, 0.589);
-}
-}
+
+/*# sourceMappingURL=estilo.css.map */
