@@ -1,0 +1,29 @@
+.cuerpo{
+    h4{
+        color: #585757;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+}
+.linkFormulario{
+    align-self:center;
+    list-style:none;
+    a{
+    color: white;
+    text-decoration: none;
+    }
+}
+.formularioDeContacto{
+    margin-top: 5rem;
+    width: 600px;
+    background-color: #5857574d;
+    border: rgba(86, 186, 86, 0.76) solid 2px;
+    padding: 80px;
+    margin-bottom:100px;
+}
+.form-label{
+    color: wheat;
+}
+.form-check-label{
+    color: wheat;
+}

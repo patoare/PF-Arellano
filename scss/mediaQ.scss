@@ -1,0 +1,60 @@
+@media screen and (max-width:768px){
+    .container-grid {
+    grid-template-columns: 2fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+    "nav"
+    "fotoProyecto"
+    "tablaProyecto"
+    "yotube1"
+    "youtube2"
+    "footerProyecto ";
+    background: none;
+    background-color: rgb(49, 80, 49);
+}
+}
+  @media screen and (max-width:425px){
+    .container-grid {
+     grid-template-columns: 2fr;
+     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+     grid-template-areas:
+     "nav"
+     "tablaProyecto"
+     "fotoProyecto"
+     "yotube1"
+     "youtube2"
+     "footerProyecto ";
+     background: none;
+     background-color:rgba(145, 219, 145, 0.289);
+}
+}
+
+/* dependencias para MQ pagina 1 */
+  
+@media screen and (max-width: 768px){
+    .responsiveActivo{
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.5fr 2.3fr 3fr 1fr;
+    grid-template-areas:
+    "header header"
+    "carousel carousel"
+    "cuerpo cuerpo"
+    "footerPagina1 footerPagina1";   
+    background: none;
+    background-color: rgba(72, 138, 72, 0.671);  
+}
+}
+  @media screen and (max-width:425px){
+    .responsiveActivo{
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 1fr 1.7fr 3fr 1fr;
+    grid-template-areas:
+    "header"
+    "cuerpo"
+    "cuerpo"
+    "carousel"
+    "footerPagina1";
+    background: none;
+    background-color:rgba(101, 130, 59, 0.589);
+}
+}

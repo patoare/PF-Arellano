@@ -6,8 +6,7 @@
 }
 
 body {
-  background: rgb(5, 5, 5);
-  background: linear-gradient(0deg, rgb(5, 5, 5) 0%, rgba(243, 246, 241, 0.7540266106) 18%) no-repeat;
+  background-color: black;
 }
 
 /* Estilo de barra navegacion */
@@ -83,6 +82,10 @@ footer {
   display: flex;
   justify-content: space-around;
 }
+footer h6 {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
 
 .logoFooter img {
   width: 90px;
@@ -97,10 +100,10 @@ footer {
   height: 100vw;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 0.5fr 2.3fr 1.7fr 3fr 1fr;
+  grid-template-rows: 0.5fr 2.3fr 1.7fr 1fr;
   gap: 5px;
   grid-auto-flow: row;
-  grid-template-areas: "header header header" "carousel carousel carousel" "cuerpo cuerpo cuerpo" "plano plano plano" "footerPagina1 footerPagina1 footerPagina1";
+  grid-template-areas: "header header header" "carousel carousel carousel" "cuerpo cuerpo cuerpo" "footerPagina1 footerPagina1 footerPagina1";
 }
 
 .header {
@@ -132,20 +135,18 @@ footer {
 .carousel {
   grid-area: carousel;
   width: 100%;
-  height: 550px;
+  height: 35rem;
   display: flex;
   flex-direction: column;
-  border-style: solid 5px;
-  border-color: gray;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 2rem;
+  margin-bottom: 5rem;
 }
 
 .cuerpo {
   grid-area: cuerpo;
   width: 99%;
-  margin-top: 3px;
-  margin-bottom: 50px;
+  margin-top: 5rem;
+  margin-bottom: 10rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -156,16 +157,13 @@ footer {
   background-color: transparent;
   margin: 60px;
 }
-
-.plano {
-  grid-area: plano;
-  text-align: center;
-  margin-bottom: 60px;
+.cuerpo h3 {
+  margin-top: 5rem;
 }
-.plano p {
-  margin-left: 60px;
-  margin-right: 60px;
-  font-weight: bold;
+
+.marcasLogo {
+  margin-left: 0.1rem;
+  margin-right: 3rem;
 }
 
 /* estilo pagina 2 */
@@ -184,37 +182,65 @@ footer {
   margin-left: 140px;
   margin-right: 60px;
   margin-top: 20px;
+  padding-top: 20px;
   background-color: rgba(0, 0, 0, 0.692);
   color: white;
   line-height: 1.7;
 }
+.parrafoPag2 h1 {
+  text-align: center;
+  color: black solid;
+}
+.parrafoPag2 h2 {
+  text-align: center;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
 
 /* estilo pagina 3 */
+.cuerpo h1 {
+  color: white;
+  margin-top: 5rem;
+}
+.cuerpo h2 {
+  color: white;
+  margin-bottom: 10rem;
+}
+
 .serviciosCard1 {
   display: flex;
-  text-align: center;
+  height: 40rem;
   margin-top: 50px;
-  padding: 25px;
 }
 .serviciosCard1 img {
   margin-left: 50px;
   margin-right: 50px;
+  margin-top: 15px;
   height: 120px;
   width: 200px;
 }
 
 .serviciosCard2 {
   display: flex;
-  flex-wrap: wrap;
-  text-align: center;
+  width: 60rem;
+  height: 40rem;
   padding: 25px;
   margin-bottom: 100px;
 }
 .serviciosCard2 img {
   margin-left: 50px;
   margin-right: 50px;
+  margin-top: 15px;
   height: 120px;
   width: 200px;
+}
+
+.card {
+  background-color: #585757;
+  height: 10rem;
+}
+.card ul li {
+  background-color: black;
 }
 
 .card h5:hover {
@@ -245,11 +271,21 @@ footer {
   grid-area: fotoProyecto;
   margin-top: 20px;
 }
+.fotoProyecto h3 {
+  text-align: center;
+  color: white;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+.fotoProyecto img {
+  width: 90%;
+  margin-left: 2rem;
+}
 
 .tablaProyecto {
   grid-area: tablaProyecto;
   height: 200px;
-  margin-top: 200px;
+  margin-top: 20rem;
   margin-left: 20px;
   margin-right: 40px;
   border-style: solid;
@@ -257,17 +293,31 @@ footer {
   text-align: center;
   font-weight: bold;
 }
+.tablaProyecto p {
+  color: white;
+  font-weight: lighter;
+}
+.tablaProyecto h5 {
+  color: whitesmoke;
+  font-weight: bold;
+}
+.tablaProyecto h6 {
+  color: whitesmoke;
+  font-weight: bold;
+}
 
 .yotube1 {
   grid-area: yotube1;
   margin-top: 20px;
   text-align: center;
+  margin-top: 4rem;
 }
 
 .youtube2 {
   grid-area: youtube2;
   margin-top: 20px;
   text-align: center;
+  margin-top: 4rem;
 }
 
 .footerProyecto {
@@ -286,6 +336,12 @@ footer {
 }
 
 /* estilo pagina 5*/
+.cuerpo h4 {
+  color: #585757;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
 .linkFormulario {
   align-self: center;
   list-style: none;
@@ -296,19 +352,47 @@ footer {
 }
 
 .formularioDeContacto {
-  margin-top: 100px;
+  margin-top: 5rem;
   width: 600px;
+  background-color: rgba(88, 87, 87, 0.3019607843);
   border: rgba(86, 186, 86, 0.76) solid 2px;
   padding: 80px;
   margin-bottom: 100px;
 }
 
+.form-label {
+  color: wheat;
+}
+
+.form-check-label {
+  color: wheat;
+}
+
 /* dependencias para MQ pagina 4 */
+@media screen and (max-width: 768px) {
+  .container-grid {
+    grid-template-columns: 2fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "nav" "fotoProyecto" "tablaProyecto" "yotube1" "youtube2" "footerProyecto ";
+    background: none;
+    background-color: rgb(49, 80, 49);
+  }
+}
+@media screen and (max-width: 425px) {
+  .container-grid {
+    grid-template-columns: 2fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "nav" "tablaProyecto" "fotoProyecto" "yotube1" "youtube2" "footerProyecto ";
+    background: none;
+    background-color: rgba(145, 219, 145, 0.289);
+  }
+}
+/* dependencias para MQ pagina 1 */
 @media screen and (max-width: 768px) {
   .responsiveActivo {
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 0.5fr 2.3fr 1.7fr 3fr 1fr;
-    grid-template-areas: "header header" "carousel carousel" "plano plano" "cuerpo cuerpo" "footerPagina1 footerPagina1";
+    grid-template-rows: 0.5fr 2.3fr 3fr 1fr;
+    grid-template-areas: "header header" "carousel carousel" "cuerpo cuerpo" "footerPagina1 footerPagina1";
     background: none;
     background-color: rgba(72, 138, 72, 0.671);
   }
@@ -316,8 +400,8 @@ footer {
 @media screen and (max-width: 425px) {
   .responsiveActivo {
     grid-template-columns: 1fr;
-    grid-template-rows: 0.5fr 1fr 1fr 1.7fr 3fr 1fr;
-    grid-template-areas: "header" "plano" "cuerpo" "cuerpo" "carousel" "footerPagina1";
+    grid-template-rows: 0.5fr 1fr 1.7fr 3fr 1fr;
+    grid-template-areas: "header" "cuerpo" "cuerpo" "carousel" "footerPagina1";
     background: none;
     background-color: rgba(101, 130, 59, 0.589);
   }
