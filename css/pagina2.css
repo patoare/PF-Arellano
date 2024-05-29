@@ -1,0 +1,36 @@
+@charset "UTF-8";
+.responsivePag2 {
+  background-image: linear-gradient(black, grey);
+}
+
+.parrafoPag2 {
+  height: 800px;
+  background-image: url(../multimedia/domótica-casa-inteligente.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  margin-bottom: 80px;
+}
+.parrafoPag2 p {
+  font-weight: bold;
+  font-size: large;
+  width: 80%;
+  margin-left: 140px;
+  margin-right: 60px;
+  margin-top: 20px;
+  padding-top: 20px;
+  background-color: rgba(0, 0, 0, 0.692);
+  color: white;
+  line-height: 1.7;
+}
+.parrafoPag2 h1 {
+  text-align: center;
+  color: black solid;
+}
+.parrafoPag2 h2 {
+  text-align: center;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+/*# sourceMappingURL=pagina2.css.map */

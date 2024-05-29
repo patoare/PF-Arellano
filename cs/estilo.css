@@ -97,8 +97,8 @@ footer h6 {
 
 /* Estilo index*/
 .responsiveActivo {
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vw;
   background-image: linear-gradient(black, grey);
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -239,16 +239,11 @@ footer h6 {
   padding: 25px;
   margin-top: 50px;
 }
-.serviciosCard1 h5 {
-  text-align: center;
-  margin-top: 5rem;
-}
 .serviciosCard1 img {
-  align-self: center;
   margin-left: 50px;
   margin-right: 50px;
   margin-top: 15px;
-  height: 10rem;
+  height: 15rem;
   width: 15rem;
 }
 
@@ -259,27 +254,20 @@ footer h6 {
   padding: 25px;
   margin-bottom: 100px;
 }
-.serviciosCard2 h5 {
-  text-align: center;
-  margin-top: 5rem;
-}
 .serviciosCard2 img {
-  align-self: center;
   margin-left: 50px;
   margin-right: 50px;
   margin-top: 15px;
-  height: 10rem;
+  height: 15rem;
   width: 15rem;
 }
 
 .card {
-  background-image: linear-gradient(white, black);
-  border: 1px, black, solid;
-  margin-left: 1rem;
-  height: 30rem;
+  background-color: #585757;
+  height: 10rem;
 }
 .card ul li {
-  background-image: linear-gradient(white, black);
+  background-color: black;
 }
 
 .card h5:hover {
@@ -288,24 +276,6 @@ footer h6 {
   border-style: solid;
   border-color: rgba(0, 0, 0, 0.41);
   color: white;
-}
-
-.serviciosCard1 img:hover {
-  opacity: 0.5;
-  border: 5px, black, solid;
-}
-
-.serviciosCard2 img:hover {
-  opacity: 0.5;
-  border: 5px, black, solid;
-}
-
-.card li:hover {
-  border-radius: 10px;
-  background-color: rgba(0, 0, 0, 0.41);
-  border-style: solid;
-  border-color: rgba(0, 0, 0, 0.41);
-  color: blue;
 }
 
 /* estilo pagina 4 */
@@ -443,25 +413,23 @@ footer h6 {
 }
 
 /* dependencias para MQ pagina 4 */
-/* dependencias para MQ index */
+/* dependencias para MQ pagina 1 */
 @media screen and (max-width: 768px) {
   .responsiveActivo {
-    display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 0.5fr 2.3fr 3fr 1fr;
     grid-template-areas: "header header" "carousel carousel" "cuerpo cuerpo" "footerPagina1 footerPagina1";
     background: none;
-    background-image: linear-gradient(rgba(72, 138, 72, 0.6705882353), white);
+    background-color: rgba(72, 138, 72, 0.671);
   }
 }
 @media screen and (max-width: 425px) {
   .responsiveActivo {
-    display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 0.5fr 1fr 1.7fr 3fr 1fr;
     grid-template-areas: "header" "cuerpo" "cuerpo" "carousel" "footerPagina1";
     background: none;
-    background-image: radial-gradient(circle, rgba(101, 130, 59, 0.5882352941), black);
+    background-color: rgba(101, 130, 59, 0.589);
   }
 }
 /* dependencias para MQ pagina 2 */
@@ -471,7 +439,7 @@ footer h6 {
     grid-template-rows: 0.5fr 3fr 1fr;
     grid-template-areas: "header2" "parrafoPag2" "footer";
     background: none;
-    background-image: linear-gradient(rgba(72, 138, 72, 0.6705882353), white);
+    background-color: #315031;
   }
 }
 @media screen and (max-width: 425px) {
@@ -480,7 +448,7 @@ footer h6 {
     grid-template-rows: 0.5fr 3fr 1fr;
     grid-template-areas: "header2" "parrafoPag2" "footer";
     background: none;
-    background-image: radial-gradient(circle, rgba(101, 130, 59, 0.5882352941), black);
+    background-color: rgba(145, 219, 145, 0.2901960784);
   }
 }
 /* dependencias para MQ pagina 3 */
@@ -490,7 +458,7 @@ footer h6 {
     grid-template-rows: 0.5fr 3fr 1fr;
     grid-template-areas: "header3 header3" "cuerpo3 cuerpo3" "footerPag3 footerPag3";
     background: none;
-    background-image: linear-gradient(rgba(72, 138, 72, 0.6705882353), white);
+    background-color: #315031;
   }
 }
 @media screen and (max-width: 425px) {
@@ -499,7 +467,7 @@ footer h6 {
     grid-template-rows: 0.5fr 3fr 1fr;
     grid-template-areas: "header3 header3" "cuerpo3 cuerpo3" "footerPag3 footerPag3";
     background: none;
-    background-image: radial-gradient(circle, rgba(101, 130, 59, 0.5882352941), black);
+    background-color: rgba(145, 219, 145, 0.2901960784);
   }
 }
 /* dependencias para MQ pagina 4 */
@@ -509,7 +477,7 @@ footer h6 {
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas: "nav" "fotoProyecto" "tablaProyecto" "yotube1" "youtube2" "footerProyecto ";
     background: none;
-    background-image: linear-gradient(rgba(72, 138, 72, 0.6705882353), white);
+    background-color: #315031;
   }
 }
 @media screen and (max-width: 425px) {
@@ -518,7 +486,7 @@ footer h6 {
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas: "nav" "tablaProyecto" "fotoProyecto" "yotube1" "youtube2" "footerProyecto ";
     background: none;
-    background-image: radial-gradient(circle, rgba(101, 130, 59, 0.5882352941), black);
+    background-color: rgba(145, 219, 145, 0.2901960784);
   }
 }
 /* dependencias para MQ pagina 5 */
@@ -528,7 +496,7 @@ footer h6 {
     grid-template-rows: 0.5fr 3fr 1fr;
     grid-template-areas: "header5 header5" "cuerpo5 cuerpo5" "footerPag5 footerPag5";
     background: none;
-    background-image: linear-gradient(rgba(72, 138, 72, 0.6705882353), white);
+    background-color: #315031;
   }
 }
 @media screen and (max-width: 425px) {
@@ -537,7 +505,7 @@ footer h6 {
     grid-template-rows: 0.5fr 3fr 1fr;
     grid-template-areas: "header5 header5" "cuerpo5 cuerpo5" "footerPag5 footerPag5";
     background: none;
-    background-image: radial-gradient(circle, rgba(101, 130, 59, 0.5882352941), black);
+    background-color: rgba(145, 219, 145, 0.2901960784);
   }
 }
 

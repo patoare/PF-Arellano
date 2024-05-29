@@ -1,0 +1,99 @@
+.responsivePag3 {
+  background-image: linear-gradient(black, grey);
+}
+
+.cuerpo3 {
+  grid-area: cuerpo;
+  width: 99%;
+  margin-top: 5rem;
+  margin-bottom: 10rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.cuerpo3 h1 {
+  color: white;
+  margin-top: 5rem;
+}
+.cuerpo3 h2 {
+  color: white;
+  margin-bottom: 10rem;
+}
+
+.serviciosCard1 {
+  display: flex;
+  width: 60rem;
+  height: 40rem;
+  padding: 25px;
+  margin-top: 50px;
+}
+.serviciosCard1 h5 {
+  text-align: center;
+  margin-top: 5rem;
+}
+.serviciosCard1 img {
+  align-self: center;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 15px;
+  height: 10rem;
+  width: 15rem;
+}
+
+.serviciosCard2 {
+  display: flex;
+  width: 60rem;
+  height: 40rem;
+  padding: 25px;
+  margin-bottom: 100px;
+}
+.serviciosCard2 h5 {
+  text-align: center;
+  margin-top: 5rem;
+}
+.serviciosCard2 img {
+  align-self: center;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 15px;
+  height: 10rem;
+  width: 15rem;
+}
+
+.card {
+  background-image: linear-gradient(white, black);
+  border: 1px, black, solid;
+  margin-left: 1rem;
+  height: 30rem;
+}
+.card ul li {
+  background-image: linear-gradient(white, black);
+}
+
+.card h5:hover {
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.41);
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0.41);
+  color: white;
+}
+
+.serviciosCard1 img:hover {
+  opacity: 0.5;
+  border: 5px, black, solid;
+}
+
+.serviciosCard2 img:hover {
+  opacity: 0.5;
+  border: 5px, black, solid;
+}
+
+.card li:hover {
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.41);
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0.41);
+  color: blue;
+}
+
+/*# sourceMappingURL=pagina3.css.map */
