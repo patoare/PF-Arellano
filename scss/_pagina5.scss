@@ -1,0 +1,47 @@
+$color-fondo: linear-gradient(black, grey);
+$color-titulo: #585757;
+$color-letraform: white;
+$color-gradiente-circular: radial-gradient(circle, grey, black);
+$color-bordeForm: rgba(86, 186, 86, 0.76) solid 2px;
+.responsivePag5{
+    background-image: $color-fondo;
+}
+.cuerpo5{
+    grid-area:cuerpo5;
+    width: 99%;
+    margin-top: 5rem;
+    margin-bottom: 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h2{
+        color: $color-titulo;
+    }
+    h4{
+        color: $color-titulo;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+}
+.linkFormulario{
+    align-self:center;
+    list-style:none;
+    a{
+    color: $color-letraform;
+    text-decoration: none;
+    }
+}
+.formularioDeContacto{
+    margin-top: 5rem;
+    width: 600px;
+    background-image: $color-gradiente-circular;
+    border: $color-bordeForm;
+    padding: 80px;
+    margin-bottom:100px;
+}
+.form-label{
+    color: wheat;
+}
+.form-check-label{
+    color: wheat;
+}

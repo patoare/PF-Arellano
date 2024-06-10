@@ -1,0 +1,72 @@
+$color-gradiente: linear-gradient(white, black);
+$color-fondo: linear-gradient(black, grey);
+$color-hover: rgba(0, 0, 0, 0.41);
+.responsivePag3{
+    background-image: $color-fondo;
+}
+.cuerpo3{
+    grid-area:cuerpo;
+    width: 99%;
+    margin-top: 5rem;
+    margin-bottom: 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h1{
+        color: white;
+        margin-top: 5rem;
+    }
+    h2{
+        color: white;
+        margin-bottom: 10rem;
+    }
+}
+.serviciosCard1{
+    display: flex;
+    width: 60rem;
+    height: 40rem;
+    padding: 25px;
+    margin-top: 50px;
+    h5{
+        text-align: center;
+        margin-top: 5rem;
+    &:hover{
+        border-radius: 10px;
+    background-color:$color-hover;
+    border-style:solid;
+    border-color:$color-hover;
+    color: white;
+    }    
+    }
+    img{
+    align-self: center;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 15px;
+    height: 10rem;
+    width: 15rem;
+    &:hover{
+        opacity: 0.5;
+        border: 5px, black, solid;
+    }
+    }
+}
+.serviciosCard2{
+    @extend .serviciosCard1;
+}
+.card{
+    background-image:$color-gradiente;
+    border: 1px, black, solid;
+    margin-left: 1rem;
+    height: 30rem;
+    ul li{
+        background-image:$color-gradiente;
+    }
+}
+.card li:hover{
+    border-radius: 10px;
+    background-color:$color-hover;
+    border-style:solid;
+    border-color:$color-hover;
+    color: blue;
+}

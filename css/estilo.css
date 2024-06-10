@@ -13,7 +13,7 @@ body {
 /* Estilo de barra navegacion */
 .nav {
   width: 100%;
-  height: 300%;
+  height: 120%;
   background-image: url(../multimedia/fondo-nav.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -224,6 +224,7 @@ h3 {
   background-attachment: fixed;
   background-size: cover;
   margin-bottom: 5%;
+  margin-top: 10%;
 }
 .parrafoPag2 p {
   font-weight: bold;
@@ -273,18 +274,25 @@ h3 {
   margin-bottom: 10rem;
 }
 
-.serviciosCard1 {
+.serviciosCard1, .serviciosCard2 {
   display: flex;
   width: 60rem;
   height: 40rem;
   padding: 25px;
   margin-top: 50px;
 }
-.serviciosCard1 h5 {
+.serviciosCard1 h5, .serviciosCard2 h5 {
   text-align: center;
   margin-top: 5rem;
 }
-.serviciosCard1 img {
+.serviciosCard1 h5:hover, .serviciosCard2 h5:hover {
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.41);
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0.41);
+  color: white;
+}
+.serviciosCard1 img, .serviciosCard2 img {
   align-self: center;
   margin-left: 50px;
   margin-right: 50px;
@@ -292,25 +300,9 @@ h3 {
   height: 10rem;
   width: 15rem;
 }
-
-.serviciosCard2 {
-  display: flex;
-  width: 60rem;
-  height: 40rem;
-  padding: 25px;
-  margin-bottom: 100px;
-}
-.serviciosCard2 h5 {
-  text-align: center;
-  margin-top: 5rem;
-}
-.serviciosCard2 img {
-  align-self: center;
-  margin-left: 50px;
-  margin-right: 50px;
-  margin-top: 15px;
-  height: 10rem;
-  width: 15rem;
+.serviciosCard1 img:hover, .serviciosCard2 img:hover {
+  opacity: 0.5;
+  border: 5px, black, solid;
 }
 
 .card {
@@ -321,24 +313,6 @@ h3 {
 }
 .card ul li {
   background-image: linear-gradient(white, black);
-}
-
-.card h5:hover {
-  border-radius: 10px;
-  background-color: rgba(0, 0, 0, 0.41);
-  border-style: solid;
-  border-color: rgba(0, 0, 0, 0.41);
-  color: white;
-}
-
-.serviciosCard1 img:hover {
-  opacity: 0.5;
-  border: 5px, black, solid;
-}
-
-.serviciosCard2 img:hover {
-  opacity: 0.5;
-  border: 5px, black, solid;
 }
 
 .card li:hover {
@@ -372,7 +346,7 @@ h3 {
 }
 .fotoProyecto h3 {
   text-align: center;
-  color: white;
+  color: whitesmoke;
   margin-top: 5rem;
   margin-bottom: 5rem;
 }
@@ -393,7 +367,7 @@ h3 {
   font-weight: bold;
 }
 .tablaProyecto p {
-  color: white;
+  color: whitesmoke;
   font-weight: lighter;
 }
 .tablaProyecto h5 {
