@@ -13,7 +13,7 @@ body {
 /* Estilo de barra navegacion */
 .nav {
   width: 100%;
-  height: 160px;
+  height: 300%;
   background-image: url(../multimedia/fondo-nav.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -115,7 +115,7 @@ footer h6 {
 .navPagina1 {
   grid-area: navPagina1;
   width: 99%;
-  height: 160px;
+  height: 120%;
   background-image: url(../multimedia/fondo-nav.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -129,49 +129,87 @@ footer h6 {
   grid-area: footerPagina1;
   width: 99%;
   height: 160px;
-  margin: 5px;
+  margin: 1%;
+  margin-bottom: 1%;
+  margin-top: 15%;
   display: flex;
   justify-content: space-around;
 }
 
+.cuerpoIndex {
+  width: 60vw;
+  height: 130vh;
+}
+.cuerpoIndex h1 {
+  text-align: center;
+  color: whitesmoke;
+  margin-bottom: 5%;
+  margin-top: 10%;
+}
+
 .carousel {
   grid-area: carousel;
-  width: 100%;
-  height: 35rem;
+  width: 110%;
+  height: 25rem;
+  text-align: center;
   display: flex;
   flex-direction: column;
-  margin-top: 2rem;
+  margin-top: 10%;
   margin-bottom: 5rem;
+  margin-right: 12%;
+  align-self: center;
 }
 
 .cuerpo {
   grid-area: cuerpo;
-  width: 99%;
+  width: 15%;
   margin-top: 5rem;
   margin-bottom: 10rem;
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 .cuerpo img {
-  width: 100px;
-  height: 50px;
+  width: 300%;
+  height: 300%;
   background-color: transparent;
-  margin: 60px;
+  margin-right: 70%;
 }
-.cuerpo h3 {
+
+h3 {
+  width: 99%;
   margin-top: 5rem;
+  text-align: center;
+  color: whitesmoke;
 }
 
 .marcasLogo {
-  margin-left: 0.1rem;
+  margin-left: 3rem;
   margin-right: 3rem;
-  height: 100px;
+  height: 50%;
   transition: height 2s;
 }
 
 .marcasLogo :hover {
   transform: skewY(25deg);
+}
+
+.pilares h3 {
+  text-align: center;
+  color: white;
+}
+
+.logitos {
+  display: flex;
+  gap: 15%;
+  padding: 10%;
+}
+.logitos img {
+  height: 80%;
+  width: 100%;
+  margin-top: 10%;
+  border-style: ridge;
+  border-radius: 100%;
+  border-color: black;
 }
 
 /* estilo pagina 2 */
@@ -180,12 +218,12 @@ footer h6 {
 }
 
 .parrafoPag2 {
-  height: 800px;
+  height: 100rem;
   background-image: url(../multimedia/domótica-casa-inteligente.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  margin-bottom: 80px;
+  margin-bottom: 5%;
 }
 .parrafoPag2 p {
   font-weight: bold;
@@ -193,9 +231,12 @@ footer h6 {
   width: 80%;
   margin-left: 140px;
   margin-right: 60px;
-  margin-top: 20px;
-  padding-top: 20px;
-  background-color: rgba(0, 0, 0, 0.692);
+  margin-top: 20%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  padding-left: 2%;
+  padding-right: 2%;
+  background-image: radial-gradient(circle, grey, black);
   color: white;
   line-height: 1.7;
 }

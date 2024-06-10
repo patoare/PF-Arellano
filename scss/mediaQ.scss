@@ -71,7 +71,7 @@ background-image:linear-gradient( #488a48ab,white)
   }
   @media screen and (max-width:425px){
     .responsivePag3{
-      grid-template-columns: 1fr;
+      grid-template-columns: 1fr ;
       grid-template-rows: 0.5fr 3fr 1fr;
       grid-template-areas:
       "header3 header3"

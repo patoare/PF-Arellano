@@ -4,12 +4,12 @@
 }
 
 .parrafoPag2 {
-  height: 800px;
+  height: 100rem;
   background-image: url(../multimedia/domótica-casa-inteligente.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  margin-bottom: 80px;
+  margin-bottom: 5%;
 }
 .parrafoPag2 p {
   font-weight: bold;
@@ -17,9 +17,12 @@
   width: 80%;
   margin-left: 140px;
   margin-right: 60px;
-  margin-top: 20px;
-  padding-top: 20px;
-  background-color: rgba(0, 0, 0, 0.692);
+  margin-top: 20%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  padding-left: 2%;
+  padding-right: 2%;
+  background-image: radial-gradient(circle, grey, black);
   color: white;
   line-height: 1.7;
 }
