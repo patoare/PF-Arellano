@@ -183,6 +183,7 @@ h3 {
 }
 
 .marcasLogo {
+  grid-area: cuerpo;
   margin-left: 3rem;
   margin-right: 3rem;
   height: 50%;
@@ -468,27 +469,43 @@ h3 {
     background: none;
     background-image: linear-gradient(rgba(72, 138, 72, 0.6705882353), white);
   }
-  .header {
-    width: 100vw;
-  }
-  .navPagina1 {
-    width: 130%;
-  }
-  h1 {
-    width: 40vw;
-  }
-  h3 {
-    width: 40vw;
-    text-align: center;
-  }
-  .carousel {
-    width: 80vw;
-    margin-right: 300px;
-  }
-  .logitos {
-    margin-right: 300px;
-  }
 }
+.header {
+  width: 100vw;
+  padding-left: 50px;
+}
+
+.navPagina1 {
+  width: 130%;
+}
+
+h1 {
+  width: 20vw;
+  font-weight: lighter;
+  font-size: medium;
+  margin-left: 200px;
+}
+
+h3 {
+  width: 20vw;
+  font-weight: lighter;
+  font-size: medium;
+  margin-left: 200px;
+}
+
+.carousel {
+  width: 60vw;
+  margin-left: 50px;
+}
+
+.logitos {
+  width: 30vw;
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  margin-left: 170px;
+}
+
 @media screen and (max-width: 425px) {
   .responsiveActivo {
     display: grid;
@@ -497,6 +514,9 @@ h3 {
     grid-template-areas: "header" "h1" "carousel" "h3" "cuerpo" "pilares" "footerPagina1";
     background: none;
     background-image: radial-gradient(circle, rgba(101, 130, 59, 0.5882352941), black);
+  }
+  .header {
+    width: 250vw;
   }
   .navPagina1 {
     width: 100%;
@@ -513,7 +533,9 @@ h3 {
     width: 240vw;
   }
   .logitos {
-    width: 240vw;
+    width: 50vw;
+    height: 50vh;
+    margin-left: 600px;
   }
 }
 /* dependencias para MQ pagina 2 */
