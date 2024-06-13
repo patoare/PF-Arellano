@@ -1,3 +1,5 @@
+$color-768: linear-gradient( #488a48ab,white);
+$color-425: radial-gradient(circle, #65823b96 , black);
 /* dependencias para MQ index */
 @media screen and (max-width: 768px){
   .responsiveActivo{  
@@ -13,39 +15,10 @@
   "pilares pilares"
   "footerPagina1 footerPagina1";   
   background: none;
-  background-image:linear-gradient( #488a48ab,white);
+  background-image:$color-768;
 }
 }
-.header{
-  width: 100vw;
-  padding-left: 50px;
-}
-.navPagina1{
-  width: 130%;
-}
-h1{
-  width: 20vw;
-  font-weight: lighter;
-  font-size:medium;
-  margin-left: 200px; 
-}
-h3{
-  width: 20vw;
-  font-weight: lighter;
-  font-size:medium;
-  margin-left: 200px; 
-}
-.carousel{
-  width: 60vw;
-  margin-left: 50px; 
-}
-.logitos{
-  width: 30vw;
-  height: 30vh;
-  display: flex;
-  flex-direction: column;
-  margin-left: 170px;  
-}
+
 @media screen and (max-width:425px){
   .responsiveActivo{
   display: grid;
@@ -60,29 +33,7 @@ h3{
   "pilares"
   "footerPagina1";
   background: none;
-  background-image: radial-gradient(circle, #65823b96 , black);
-}
-.header{
-  width: 250vw;
-}
-.navPagina1{
-  width: 100%;
-}
-h1{
-  width: 240vw;
-  background-color: black;
-  text-align: center;
-}
-.carousel{
-  width: 250vw;
-}
-h3{
-  width: 240vw;
-}
-.logitos{
-  width: 50vw;
-  height: 50vh;
-  margin-left: 600px;
+  background-image: $color-425;
 }
 }
 
@@ -96,7 +47,7 @@ grid-template-areas:
 "parrafoPag2"
 "footer";
 background: none;
-background-image:linear-gradient( #488a48ab,white)
+background-image:$color-768;
 }
 }
 @media screen and (max-width:425px){
@@ -108,7 +59,7 @@ background-image:linear-gradient( #488a48ab,white)
     "parrafoPag2"
     "footer";
     background: none;
-    background-image: radial-gradient(circle, #65823b96 , black);
+    background-image: $color-425;
     }
 }
 

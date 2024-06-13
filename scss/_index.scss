@@ -1,7 +1,7 @@
 $color-fondo: linear-gradient(black, grey);
 .responsiveActivo{
     width:100%;
-    height: 100%;
+    height: 80%;
     background-image: $color-fondo;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -16,11 +16,12 @@ $color-fondo: linear-gradient(black, grey);
 }
 .header{
     grid-area: header;
+    height: 80%;
 }
 .navPagina1{
     grid-area: navPagina1;
-    width: 99%;
-    height: 120%;
+    width: 99vw;
+    height: 80%;
     background-image:url(../multimedia/fondo-nav.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -41,7 +42,7 @@ $color-fondo: linear-gradient(black, grey);
 }
 .cuerpoIndex{
     width: 60vw;
-    height: 130vh;
+    height: 100%;
     h1{
         text-align: center;
         color: whitesmoke;

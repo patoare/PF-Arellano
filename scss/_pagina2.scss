@@ -10,7 +10,7 @@ $color-gradiente-circular: radial-gradient(circle, grey, black);
     background-attachment: fixed;
     background-size: cover;
     margin-bottom: 5%;
-    margin-top: 10%;
+    margin-top: 5%;
     p{
     font-weight: bold;
     font-size: large;
@@ -28,6 +28,7 @@ $color-gradiente-circular: radial-gradient(circle, grey, black);
     }
     h1{
         text-align: center;
+        width: 100%;
         color: black solid;
     }
     h2{
